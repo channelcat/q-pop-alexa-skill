@@ -1,0 +1,858 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "q. pop",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Accept",
+                    "slots": [],
+                    "samples": [
+                        "join queue",
+                        "accept lobby",
+                        "join lobby",
+                        "accept",
+                        "accept queue"
+                    ]
+                },
+                {
+                    "name": "Decline",
+                    "slots": [],
+                    "samples": [
+                        "leave queue",
+                        "exit",
+                        "leave",
+                        "abort",
+                        "decline queue",
+                        "decline lobby",
+                        "decline"
+                    ]
+                },
+                {
+                    "name": "LockIn",
+                    "slots": [
+                        {
+                            "name": "Champion",
+                            "type": "Champion"
+                        }
+                    ],
+                    "samples": [
+                        "{Champion}",
+                        "take {Champion}",
+                        "choose {Champion}",
+                        "pick {Champion}",
+                        "select {Champion}",
+                        "lock in {Champion}"
+                    ]
+                },
+                {
+                    "name": "SelectSummonerSpells",
+                    "slots": [
+                        {
+                            "name": "SlotD",
+                            "type": "SummonerSpell"
+                        },
+                        {
+                            "name": "SlotF",
+                            "type": "SummonerSpell"
+                        }
+                    ],
+                    "samples": [
+                        "pick {SlotD} and {SlotF}",
+                        "get {SlotD} and {SlotF}",
+                        "pick summoner spells {SlotD} and {SlotF}",
+                        "select summoners {SlotD} and {SlotF}",
+                        "pick summoners {SlotD} and {SlotF}",
+                        "select summoner spells {SlotD} and {SlotF}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Champion",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Annie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kayle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Xerath"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shyvana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ahri"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Graves"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fizz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Volibear"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rengar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Master Yi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Varus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nautilus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Viktor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sejuani"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fiora"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ziggs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lulu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Draven"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Alistar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hecarim"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kha'Zix"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Darius"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jayce"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lissandra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ryze"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Diana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Quinn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Syndra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aurelion Sol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kayn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zoe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zyra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kai'Sa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sivir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gnar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zac"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yasuo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Soraka"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vel'Koz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Taliyah"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Camille"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Teemo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tristana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Warwick"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Olaf"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nunu & Willump"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Braum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jhin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kindred"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Miss Fortune"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ashe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jinx"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tahm Kench"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tryndamere"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lucian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zed"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jax"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kled"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ekko"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Morgana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zilean"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aatrox"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nami"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Azir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Singed"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Evelynn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Twitch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Galio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Karthus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cho'Gath"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amumu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rammus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anivia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shaco"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dr. Mundo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sona"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kassadin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Irelia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Twisted Fate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Janna"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gangplank"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thresh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Corki"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Illaoi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rek'Sai"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ivern"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kalista"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Karma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Taric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Veigar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Trundle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rakan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Xayah"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Xin Zhao"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Swain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Caitlyn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ornn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Blitzcrank"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Malphite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Katarina"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pyke"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nocturne"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maokai"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Renekton"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jarvan IV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Urgot"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Elise"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Orianna"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wukong"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Brand"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lee Sin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vayne"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rumble"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cassiopeia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LeBlanc"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Skarner"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Heimerdinger"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nasus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nidalee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Udyr"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Poppy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gragas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vladimir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pantheon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ezreal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mordekaiser"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yorick"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Akali"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kennen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Garen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Leona"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fiddlesticks"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Malzahar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Talon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Riven"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kog'Maw"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lux"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SummonerSpell",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Flash"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Exhaust"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ignite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Barrier"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Smite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Teleport"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cleanse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Clarity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Heal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ghost"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
