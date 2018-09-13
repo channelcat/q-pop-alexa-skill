@@ -30,10 +30,7 @@ var (
 
 func main() {
 	log.SetFlags(log.LstdFlags | log.Llongfile)
-	err := alexa.RunSSL(Applications, ":443", sslCert, sslKey)
-	if err != nil {
-		log.Fatalln(err)
-	}
+	alexa.RunSSL(Applications, ":443", sslCert, sslKey)
 }
 
 // EchoLaunchHandler handles the LaunchRequest from the echo service.
